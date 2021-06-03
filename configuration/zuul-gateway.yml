@@ -1,0 +1,9 @@
+LSH:
+    path: /LSH/**
+    url: http://k4a305.p.ssafy.io:8091
+LTH:
+    path : /user/**
+    url : http://k4a305.p.ssafy.io:8092
+KNY:
+    path : /KNY/**
+    url : http://k4a305.p.ssafy.io:8093

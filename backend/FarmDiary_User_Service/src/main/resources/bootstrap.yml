@@ -1,0 +1,25 @@
+server:
+  port: 8092
+  
+spring:
+  profiles: # 여기에 지정해도 되고, 실행할 때 지정해도 된다.
+    active: url
+  application:
+    name: mongodb
+  cloud:
+    config:
+      uri: http://ec2-3-135-227-210.us-east-2.compute.amazonaws.com:8088
+  data:
+    mongodb:
+      uri: ${mongodb.uri}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,info
+        
+# mongodb
+mongodb:
+  test:
+    connectionString: ${mongodb.uri}
+           

@@ -1,0 +1,26 @@
+server:
+  port: 8089
+spring:
+  profiles:
+    active: gateway
+  application:
+    name: zuul
+  cloud:
+    config:
+      uri: http://ec2-3-135-227-210.us-east-2.compute.amazonaws.com:8088
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,info
+zuul:
+  routes:
+    LSH:
+      path: ${LSH.path}
+      url: ${LSH.url}
+    LTH:
+      path: ${LTH.path}
+      url: ${LTH.url}
+    KNY:
+      path: ${KNY.path}
+      url: ${KNY.url}
