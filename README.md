@@ -167,15 +167,10 @@ yarn serve
 
 
  - 폴더구조는 서버 `config-server`,`zuul`,`FarmDiary_Board_Service`,`FarmDiary_Guide_Service`,`FarmDiary_User_Service`로 구성된다.
+ ## 배포
  - msa형식으로 배포하도록 노력하였다.
  - msa조직도
  ![msa 조직도](https://user-images.githubusercontent.com/62299120/119616959-387d8f00-be3c-11eb-9505-49ac8c45fb6d.PNG)
-
-
-### Database
-
-### ERdiagram
-
 
 ```markdown
 - axios
